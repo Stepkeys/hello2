@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bible text</title>
+    <link rel="stylesheet" href="stephkeys.css">
+</head>
+
+<body>
+    <div class="container">
+       
+        <div class="slide">
+
+            <div class="item" style="background-image: url(images.jpeg);">
+                <div class="content">
+                    <div class="name">
+                        <h1>JOHN 7vs38:</h1>
+                    </div>
+                    <div class="text"> He who believes in me, as the scripture said, from his innermost being will flow
+                        rivers of living water.</div>
+                </div>
+            </div>
+
+            <div class="item" style="background-image: url(download.jpeg);">
+                <div class="content">
+                    <div class="name">
+                        <h1>MATT 5vs14:</h1>
+                    </div>
+                    <div class="text"> Ye are the light of the world.A city that is set on hill cannot br hid.</div>
+                </div>
+            </div>
+
+            <div class="item" style="background-image: url(download\ \(1\).jpeg);">
+                <div class="content">
+                    <div class="name">
+                        <h1>PRO 16vs3:</h1>
+                    </div>
+                    <div class="text"> Commit your work to the Lord, and your plans will be established.</div>
+                </div>
+            </div>
+
+            <div class="item" style="background-image: url(1688844141616.jpg);">
+                <div class="content">
+                    <div class="name">
+                        <h1>LUKE 24vs34:</h1>
+                    </div>
+                    <div class="text"> The Lord is risen indeed, and hath appeared to Simon.</div>
+                </div>
+            </div>
+
+            <div class="item" style="background-image: url(images\ \(1\).jpeg);">
+                <div class="content">
+                    <div class="name">
+                        <h1>MATT 11vs28:</h1>
+                    </div>
+                    <div class="text"> Come to me, all who labor and are heavy laden,and i will give you rest.</div>
+                </div>
+            </div>
+
+            <div class="item" style="background-image: url(images\ \(2\).jpeg);">
+                <div class="content">
+                    <div class="name">
+                        <h1 class="h1">This is brought to you</h1>
+                    </div>
+                    <div class="text">
+                        <h3>by <a href="adextech@gmail.com">STEPHKEYS</a></h3>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+        <div class="btn"><button class="prev">←</button> <button class="next">→</button></div>
+    </div>
+    <script>
+        let next = document.querySelector('.next')
+        let prev = document.querySelector('.prev')
+
+
+        next.addEventListener('click', function(){
+            let item = document.querySelectorAll('.item')
+            document.querySelector('.slide').appendChild(item[0])
+        });
+
+        prev.addEventListener('click', function(){
+            let item = document.querySelectorAll('.item')
+            document.querySelector('.slide').prepend(item[item.length -1])
+        });
+    </script>
+</body>
+
+</html>
